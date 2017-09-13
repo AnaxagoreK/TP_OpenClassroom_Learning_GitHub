@@ -58,9 +58,10 @@ int main()
 {
 
 	// Le message a crypter
-	string texte("BIENVENUE SUR LE MOOC C++ D'OCR !!");
-
-	cout << "Chaine a crypter :" << endl << texte << endl << endl;
+	string texte;
+	cout << "Entrez la chaine a crypter :" << endl;
+	getline(cin, texte);
+	cin.ignore();
 
 	// Demande du decalage a lutilisateur
 	cout << "Quel decalage voulez-vous utiliser ? ";
