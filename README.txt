@@ -8,9 +8,17 @@ used it in private correspondence. The following program is used to encrypt text
 Caesar's cipher.
 
 GETTING STARTED (to be completed...)
-These instructions will get you a copy of the project up and running on your local machine for
-development and testing purposes. See deployment for notes on how to deploy the project on a
-live system.
+This program can run on both windows, linux, and Mac OS systems, after compilation. The user is
+asked to type a text (in the console) which will be encrypted using Caesar's cipher. Only capital
+letters are encrypted. An example is given below:
+
+Entrez la chaine a crypter :
+I WANT TO ENCRYPT THIS SenTENCE
+
+Quel decalage voulez-vous utiliser ? 14
+W, ,K,O,B,H, ,H,C, ,S,B,Q,F,M,D,H, ,H,V,W,G, ,G,e,n,H,S,B,Q,S,
+
+Appuyez sur une touche pour continuer...
 
 PREREQUISTES (to be competed...)
 What things you need to install the software and how to install them. Give examples.
