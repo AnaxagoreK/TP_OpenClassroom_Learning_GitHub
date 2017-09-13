@@ -28,13 +28,10 @@ public:
 		//On verifie si le caractere est une majuscule
 		if (isupper(caractere))
 		{
-			//On determine la position du caractere dans lalphabet
-			auto debut =  Alphabet.begin(); //Debut de lalphabet : 'A'
-			auto fin = Alphabet.end(); --fin; //Fin de lalphabet : 'Z'
-			auto it = find(debut, fin, caractere); //On recherche la position du caractere
-
 			//On incremente literateur jusquau caractere crypte
 			int positionCryptee = m_decalage;
+			int debut = 'A'; int fin = 'Z'; int it = caractere;
+
 			while (positionCryptee > 0)
 			{
 				//On gere le cas ou on arrive au dernier caractere de lalphabet 
@@ -47,17 +44,13 @@ public:
 			}
 
 			//On recupere le caractere crypte correspondant
-			caractere = *it;
+			caractere = it;
 		}
 	}
 
 private:
 
 	int m_decalage; // Le decalage a appliquer au texte
-
-	//Vecteur de caracteres comprenant les 26 lettres de lalphabet
-	vector<char> Alphabet{'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
-
 };
 
 
